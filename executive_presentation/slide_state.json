@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "title": "AI Transformation Delivers $111.9M Annual Benefit with 99.9% Confidence",
+    "created": 1768920639.1497545,
+    "last_updated": 1768920753.2417037,
+    "total_slides": 5
+  },
+  "slides": [
+    {
+      "id": "slide_1_executive_summary",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "slide_2_monte_carlo_results",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "slide_3_platform_risk_analysis",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "slide_4_implementation_roadmap",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "slide_5_recommendation",
+      "state": "edited",
+      "pageNum": 5
+    }
+  ],
+  "outline": [
+    {
+      "id": "slide_1_executive_summary",
+      "title": "AI Transformation Delivers $111.9M Annual Benefit with 99.9% Confidence",
+      "summary": "Executive overview of the AI transformation initiative, highlighting the $111.9M annual benefit, 99.9% confidence level, and 2,138% ROI.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_2_monte_carlo_results",
+      "title": "Monte Carlo Simulation Reveals $131M-$222M Benefit Range",
+      "summary": "Detailed Monte Carlo simulation results showing the probability distribution of financial benefits, with an expected value of $175M.",
+      "image_plan": "/home/ubuntu/nrfinance_repo/slide2_monte_carlo.png - The slide explicitly discusses Monte Carlo simulation and financial projections. Image 2 is a perfect visual representation of a Monte Carlo distribution curve and financial outcome analysis.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_3_platform_risk_analysis",
+      "title": "Platform Benefits Show Strong Probability of Success",
+      "summary": "Risk analysis breakdown by platform, highlighting the high confidence levels for Sales Intelligence and Knowledge Management.",
+      "image_plan": "/home/ubuntu/nrfinance_repo/slide3_platform_analysis.png - The slide discusses five platforms and their risk assessment. Image 3 is an \"Executive Business Infographic\" showing five interconnected nodes with confidence checks, which visually represents the five platforms and their risk/confidence levels.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_4_implementation_roadmap",
+      "title": "18-Month Phased Implementation Minimizes Risk",
+      "summary": "Visual timeline of the 18-month implementation plan, detailing the 6 phases, key milestones, and resource investment.",
+      "image_plan": "/home/ubuntu/nrfinance_repo/slide4_timeline.png - The slide details an 18-month phased implementation timeline. Image 4 is a clear, professional 18-month implementation roadmap/Gantt chart, directly matching the slide's content.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_5_recommendation",
+      "title": "Recommendation: Approve Initiative with Phased Funding",
+      "summary": "Final recommendation to approve the initiative, outlining the strategic benefits, funding request, and governance framework.",
+      "image_plan": "/home/ubuntu/nrfinance_repo/slide5_recommendation.png - The slide is the final recommendation, focusing on corporate growth, transformation, and executive approval. Image 5 is a \"Corporate Growth & Transformation Strategy\" infographic with a clear \"APPROVED\" recommendation box, which is highly suitable for a closing recommendation slide.",
+      "slide_template_key": ""
+    }
+  ]
+}

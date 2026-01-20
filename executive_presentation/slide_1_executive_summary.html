@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            display: flex;
+            overflow: hidden;
+        }
+        .left-panel {
+            width: 40%;
+            background-color: #002B49;
+            color: #FFFFFF;
+            padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right-panel {
+            width: 60%;
+            padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            color: #00A86B;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .opening-statement {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #E0E0E0;
+            border-left: 4px solid #00A86B;
+            padding-left: 20px;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .metric-card {
+            padding: 20px;
+            border-bottom: 2px solid #00A86B;
+        }
+        .metric-value {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: #002B49;
+            margin-bottom: 10px;
+        }
+        .metric-label {
+            font-size: 16px;
+            color: #666666;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        .metric-sub {
+            font-size: 14px;
+            color: #00A86B;
+            margin-top: 5px;
+        }
+        .icon-box {
+            font-size: 32px;
+            color: #00A86B;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-panel">
+            <h2>Executive Summary</h2>
+            <h1>Nations Roof AI Transformation Initiative</h1>
+            <p class="opening-statement">
+                A strategic investment that will fundamentally transform our competitive position in the commercial roofing market through five integrated AI platforms.
+            </p>
+        </div>
+        <div class="right-panel">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                    <div class="metric-value">$111.9M</div>
+                    <div class="metric-label">Annual Benefit</div>
+                    <div class="metric-sub">Base Case Projection</div>
+                </div>
+                <div class="metric-card">
+                    <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+                    <div class="metric-value">99.9%</div>
+                    <div class="metric-label">Confidence</div>
+                    <div class="metric-sub">Probability >$100M Benefit</div>
+                </div>
+                <div class="metric-card">
+                    <div class="icon-box"><i class="fas fa-coins"></i></div>
+                    <div class="metric-value">$5.0M</div>
+                    <div class="metric-label">Investment</div>
+                    <div class="metric-sub">Over 18 Months</div>
+                </div>
+                <div class="metric-card">
+                    <div class="icon-box"><i class="fas fa-rocket"></i></div>
+                    <div class="metric-value">2,138%</div>
+                    <div class="metric-label">ROI</div>
+                    <div class="metric-sub">Payback < 4 Months</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

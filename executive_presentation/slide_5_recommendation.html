@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #002B49;
+            color: #FFFFFF;
+            padding: 30px 60px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #00A86B;
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+        .content-area {
+            padding: 40px 60px;
+            display: flex;
+            height: 600px;
+            gap: 40px;
+        }
+        .visual-column {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .image-container {
+            width: 100%;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F5F7FA;
+            border: 1px solid #E0E0E0;
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .text-column {
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+        }
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #002B49;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #00A86B;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        .impact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .impact-card {
+            background-color: #F0F4F8;
+            padding: 15px;
+            border-radius: 0; /* No rounded corners */
+            border-top: 3px solid #00A86B;
+        }
+        .impact-label {
+            font-size: 12px;
+            color: #666666;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .impact-value {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #002B49;
+            margin: 5px 0;
+        }
+        .impact-change {
+            font-size: 13px;
+            color: #00A86B;
+            font-weight: 600;
+        }
+        .funding-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .funding-table th {
+            text-align: left;
+            padding: 8px;
+            background-color: #002B49;
+            color: #FFFFFF;
+            font-size: 13px;
+        }
+        .funding-table td {
+            padding: 8px;
+            border-bottom: 1px solid #E0E0E0;
+            font-size: 13px;
+            color: #333333;
+        }
+        .governance-box {
+            background-color: #E8F5E9;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .gov-col {
+            width: 48%;
+        }
+        .gov-list {
+            list-style: none;
+        }
+        .gov-list li {
+            margin-bottom: 8px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+        .gov-list li i {
+            color: #00A86B;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>Recommendation</h1>
+            <h2>Approve Initiative with Phased Funding & Governance</h2>
+        </div>
+        <div class="content-area">
+            <div class="visual-column">
+                <div class="image-container">
+                    <img src="/home/ubuntu/nrfinance_repo/slide5_recommendation.png" alt="Strategic Recommendation Infographic">
+                </div>
+            </div>
+            <div class="text-column">
+                
+                <div class="section-title">Strategic Impact</div>
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <div class="impact-label">Revenue</div>
+                        <div class="impact-value">$603M</div>
+                        <div class="impact-change"><i class="fas fa-arrow-up"></i> 14%</div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-label">Win Rate</div>
+                        <div class="impact-value">33%</div>
+                        <div class="impact-change"><i class="fas fa-arrow-up"></i> 50%</div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-label">Net Income</div>
+                        <div class="impact-value">$147.5M</div>
+                        <div class="impact-change"><i class="fas fa-arrow-up"></i> 314%</div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-label">Cost / Lead</div>
+                        <div class="impact-value">$120</div>
+                        <div class="impact-change" style="color: #00A86B;"><i class="fas fa-arrow-down"></i> 66%</div>
+                    </div>
+                </div>
+
+                <div class="section-title">Phased Funding Request</div>
+                <table class="funding-table">
+                    <thead>
+                        <tr>
+                            <th>Phase</th>
+                            <th>Timeline</th>
+                            <th>Focus Area</th>
+                            <th>Investment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Phase 1-2</strong></td>
+                            <td>Months 1-5</td>
+                            <td>Foundation & Sales Intelligence</td>
+                            <td>$1.2M</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Phase 3-4</strong></td>
+                            <td>Months 4-10</td>
+                            <td>Estimation & Project Mgmt</td>
+                            <td>$2.3M</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Phase 5-6</strong></td>
+                            <td>Months 8-18</td>
+                            <td>Market Expansion & Integration</td>
+                            <td>$1.5M</td>
+                        </tr>
+                        <tr style="background-color: #F5F7FA; font-weight: 700;">
+                            <td>TOTAL</td>
+                            <td>18 Months</td>
+                            <td>Full Transformation</td>
+                            <td>$5.0M</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="section-title">Governance & Next Steps</div>
+                <div class="governance-box">
+                    <div class="gov-col">
+                        <ul class="gov-list">
+                            <li><i class="fas fa-check-square"></i> Quarterly Steering Committee Reviews</li>
+                            <li><i class="fas fa-check-square"></i> Go/No-Go Gates at Phase Completion</li>
+                            <li><i class="fas fa-check-square"></i> Real-time KPI Dashboards</li>
+                        </ul>
+                    </div>
+                    <div class="gov-col">
+                        <ul class="gov-list">
+                            <li><i class="fas fa-arrow-right"></i> <strong>Immediate:</strong> Board Approval ($1.2M)</li>
+                            <li><i class="fas fa-arrow-right"></i> Establish AI Transformation PMO</li>
+                            <li><i class="fas fa-arrow-right"></i> Initiate Vendor Selection (P4)</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #002B49;
+            color: #FFFFFF;
+            padding: 30px 60px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #00A86B;
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+        .content-area {
+            padding: 40px 60px;
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+        }
+        .chart-container {
+            width: 100%;
+            height: 320px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F5F7FA;
+            border: 1px solid #E0E0E0;
+        }
+        .chart-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .data-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 40px;
+            height: 180px;
+        }
+        .table-container {
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            text-align: left;
+            padding: 10px;
+            background-color: #002B49;
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #E0E0E0;
+            font-size: 14px;
+            color: #333333;
+        }
+        .highlight-row {
+            background-color: #E8F5E9;
+            font-weight: 700;
+        }
+        .insights-container {
+            background-color: #F0F4F8;
+            padding: 20px;
+            border-left: 4px solid #00A86B;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .insight-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .insight-item:last-child {
+            margin-bottom: 0;
+        }
+        .insight-icon {
+            color: #00A86B;
+            font-size: 20px;
+            margin-right: 15px;
+            width: 24px;
+            text-align: center;
+        }
+        .insight-text {
+            font-size: 16px;
+            color: #333333;
+        }
+        .insight-value {
+            font-weight: 700;
+            color: #002B49;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>Monte Carlo Simulation Results</h1>
+            <h2>Risk-Adjusted Financial Projections (1,000 Iterations)</h2>
+        </div>
+        <div class="content-area">
+            <div class="chart-container">
+                <img src="/home/ubuntu/nrfinance_repo/slide2_monte_carlo.png" alt="Monte Carlo Simulation Chart">
+            </div>
+            <div class="data-grid">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Scenario</th>
+                                <th>Probability</th>
+                                <th>Benefit Range</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pessimistic (P5)</td>
+                                <td>5%</td>
+                                <td>$131.2M</td>
+                            </tr>
+                            <tr>
+                                <td>Conservative (P25)</td>
+                                <td>25%</td>
+                                <td>$152.8M</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Base Case (P50)</td>
+                                <td>50%</td>
+                                <td>$174.0M</td>
+                            </tr>
+                            <tr>
+                                <td>Optimistic (P75)</td>
+                                <td>75%</td>
+                                <td>$195.4M</td>
+                            </tr>
+                            <tr>
+                                <td>Best Case (P95)</td>
+                                <td>95%</td>
+                                <td>$221.7M</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="insights-container">
+                    <div class="insight-item">
+                        <div class="insight-icon"><i class="fas fa-bullseye"></i></div>
+                        <div class="insight-text">Expected Value: <span class="insight-value">$174.7M</span> (56% > Base)</div>
+                    </div>
+                    <div class="insight-item">
+                        <div class="insight-icon"><i class="fas fa-chart-area"></i></div>
+                        <div class="insight-text">90% Confidence Interval: <span class="insight-value">$131M - $222M</span></div>
+                    </div>
+                    <div class="insight-item">
+                        <div class="insight-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="insight-text">Probability > $111.9M: <span class="insight-value">99.6%</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #002B49;
+            color: #FFFFFF;
+            padding: 30px 60px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #00A86B;
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+        .content-area {
+            padding: 40px 60px;
+            display: flex;
+            height: 600px;
+            gap: 40px;
+        }
+        .visual-column {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F5F7FA;
+            border: 1px solid #E0E0E0;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .data-column {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th {
+            text-align: left;
+            padding: 12px 10px;
+            background-color: #002B49;
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+        }
+        td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #E0E0E0;
+            font-size: 13px;
+            color: #333333;
+        }
+        .confidence-high {
+            color: #00A86B;
+            font-weight: 700;
+        }
+        .confidence-very-high {
+            color: #002B49;
+            font-weight: 700;
+        }
+        .risk-summary {
+            background-color: #F0F4F8;
+            padding: 20px;
+            border-left: 4px solid #00A86B;
+        }
+        .summary-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #002B49;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .summary-item {
+            font-size: 14px;
+            color: #333333;
+            display: flex;
+            align-items: center;
+        }
+        .summary-icon {
+            color: #00A86B;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>Platform Risk Analysis</h1>
+            <h2>Benefits Show Strong Probability of Success Across All Initiatives</h2>
+        </div>
+        <div class="content-area">
+            <div class="visual-column">
+                <div class="image-container">
+                    <img src="/home/ubuntu/nrfinance_repo/slide3_platform_analysis.png" alt="Platform Analysis Infographic">
+                </div>
+            </div>
+            <div class="data-column">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Platform</th>
+                            <th>P5 (Low)</th>
+                            <th>P50 (Median)</th>
+                            <th>P95 (High)</th>
+                            <th>Confidence</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>P0: Market Expansion</td>
+                            <td>$5.0M</td>
+                            <td>$8.3M</td>
+                            <td>$13.1M</td>
+                            <td class="confidence-high">HIGH</td>
+                        </tr>
+                        <tr style="background-color: #E8F5E9;">
+                            <td>P1: Sales Intelligence</td>
+                            <td>$70.5M</td>
+                            <td>$112.4M</td>
+                            <td>$159.8M</td>
+                            <td class="confidence-very-high">VERY HIGH</td>
+                        </tr>
+                        <tr>
+                            <td>P2: Estimation Suite</td>
+                            <td>$18.3M</td>
+                            <td>$23.0M</td>
+                            <td>$28.2M</td>
+                            <td class="confidence-high">HIGH</td>
+                        </tr>
+                        <tr>
+                            <td>P3: Project Mgmt</td>
+                            <td>$16.8M</td>
+                            <td>$21.6M</td>
+                            <td>$26.3M</td>
+                            <td class="confidence-high">HIGH</td>
+                        </tr>
+                        <tr>
+                            <td>P4: Knowledge Mgmt</td>
+                            <td>$6.2M</td>
+                            <td>$7.9M</td>
+                            <td>$9.6M</td>
+                            <td class="confidence-very-high">VERY HIGH</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="risk-summary">
+                    <div class="summary-title">Strategic Risk Assessment</div>
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <i class="fas fa-shield-alt summary-icon"></i>
+                            <span><strong>Very Low Risk:</strong> P4 (Proven Tech)</span>
+                        </div>
+                        <div class="summary-item">
+                            <i class="fas fa-check-circle summary-icon"></i>
+                            <span><strong>Low Risk:</strong> P2 & P3 (Automation)</span>
+                        </div>
+                        <div class="summary-item">
+                            <i class="fas fa-exclamation-circle summary-icon"></i>
+                            <span><strong>Medium Risk:</strong> P0 (Market Dependent)</span>
+                        </div>
+                        <div class="summary-item">
+                            <i class="fas fa-arrow-up summary-icon"></i>
+                            <span><strong>Highest Upside:</strong> P1 (Sales Intel)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
